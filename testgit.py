@@ -15,10 +15,10 @@ def offclick():
 
 root = Tk()
 
-label = Label(master=root, text="Maddox", height=2)
+label = Label(master=root, text="Maddox", background="pink", height=2)
 label.pack()
 
-label2 = Label(master=root, text="Ayoub", height=4)
+label2 = Label(master=root, text="Ayoub", background="red", height=2)
 label2.pack()
 
 button = Button(master=root, text="Click Me", command=onclick)
