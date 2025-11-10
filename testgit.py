@@ -1,1 +1,1 @@
-print("hello to world")
+print("faka boyss")
