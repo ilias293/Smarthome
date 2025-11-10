@@ -34,8 +34,8 @@ entry2 = Entry(master=root)
 entry2.pack(padx=10, pady=10)
 
 img = PhotoImage(file='fcutrechtfoto.png')
-label = Label(master=root, image=img)
-label.pack()
+label3 = Label(master=root, image=img)
+label3.pack()
 
 
 root.mainloop()
