@@ -13,10 +13,10 @@ app.title("Inlogdashboard van Senior Smart Home")
 
 
 def login():
-    username = "Geeks"
-    password = "12345"
+    gebruikersnaam = "Puck"
+    wachtwoord = "12345"
 
-    if user_entry.get() == username and user_pass.get() == password:
+    if user_entry.get() == gebruikersnaam and user_pass.get() == wachtwoord:
         tkmb.showinfo("Succesvol ingelogd", "u bent ingelogd")
 
         # Nieuwe window
@@ -26,10 +26,10 @@ def login():
 
         ctk.CTkLabel(new_window, text="Welkom bij Senior Smart Home !!").pack()
 
-    elif user_entry.get() == username and user_pass.get() != password:
+    elif user_entry.get() == gebruikersnaam and user_pass.get() != wachtwoord:
         tkmb.showwarning("Onjuist wachtwoord", "Controleer je wachtwoord")
 
-    elif user_entry.get() != username and user_pass.get() == password:
+    elif user_entry.get() != gebruikersnaam and user_pass.get() == wachtwoord:
         tkmb.showwarning("Onjuiste gebruikersnaam", "Controleer je gebruikersnaam")
 
     else:
@@ -50,11 +50,11 @@ label = ctk.CTkLabel(master=frame, text='Inloggen bij Senior Smart Home')
 label.pack(pady=12, padx=10)
 
 # Gebruikersnaam
-user_entry = ctk.CTkEntry(master=frame, placeholder_text="Username")
+user_entry = ctk.CTkEntry(master=frame, placeholder_text="Gebruikersname")
 user_entry.pack(pady=12, padx=10)
 
 # Wachtwoord
-user_pass = ctk.CTkEntry(master=frame, placeholder_text="Password", show="*")
+user_pass = ctk.CTkEntry(master=frame, placeholder_text="WACHTWOORD", show="*")
 user_pass.pack(pady=12, padx=10)
 
 # Login knop
